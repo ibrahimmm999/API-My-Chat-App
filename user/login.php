@@ -9,6 +9,7 @@
             username = '$username' AND password = '$password'
             ";
     $result = $connect->query($sql);
+    //echo($result);
 
     if ($result->num_rows > 0){
         $data = array();
